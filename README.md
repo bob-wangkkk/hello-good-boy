@@ -26,7 +26,6 @@ minibatch    [B, C, T]
 ## 输入格式
 ### single sample:
 	Args:
-	
 		estimate:   numpy.ndarray, [C, T], reordered by best PIT permutation
 		
 		reference:  numpy.ndarray, [C, T]
