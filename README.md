@@ -1,5 +1,4 @@
 # 语音数据性能检测工具
-===
 ## 实现功能
 ---
 1. 支持各种评估指标
@@ -50,6 +49,5 @@ minibatch:
 		average_SISNRi
 	注：i -> improvement
 ---
-===
 
 
