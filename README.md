@@ -1,6 +1,5 @@
 # 语音数据性能检测工具
 ## 实现功能
----
 1. 支持各种评估指标
   1). SDR: 		Source-to-Distortion Ratio, 信号失真比
   
@@ -22,10 +21,8 @@
 			T length of audio
 
 3. 支持自动纠正输入信号与参考信号的计算排序，所利用的排序规则是最大化SI-SNR。有时候估计信号和参考通道间的排序是反的，本脚本可自动纠正。
----
 
 ## 输入格式
----
 single sample:
 	Args:
 		estimate:   numpy.ndarray, [C, T], reordered by best PIT permutation
@@ -52,6 +49,5 @@ minibatch:
 		average_PESQi
 		average_SISNRi
 
----
 
 
