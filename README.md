@@ -23,7 +23,7 @@
 ---
 single sample:
 	Args:
-		estimate: 	numpy.ndarray, [C, T], reordered by best PIT permutation
+		estimate:   numpy.ndarray, [C, T], reordered by best PIT permutation
 		reference:  numpy.ndarray, [C, T]
 		mixture:    numpy.ndarray, [T] or [C, T]
 	Returns:
@@ -37,7 +37,7 @@ single sample:
 
 minibatch:
 	Args:
-		estimate: 	numpy.ndarray, [B, C, T], reordered by best PIT permutation
+		estimate:   numpy.ndarray, [B, C, T], reordered by best PIT permutation
 		reference:  numpy.ndarray, [B, C, T]
 		mixture:    numpy.ndarray, [B, T] or [B, C, T]
 	Returns:
