@@ -16,33 +16,39 @@
 
 ### 支持单个样本输入，也支持minibatch格式样本的输入
 
-eg：单样本	   [C, T]
+单样本	   [C, T]
 
-  minibatch [B, C, T]
+minibatch    [B, C, T]
 
-注:		B batch
-
-  C channel
-  
-  T length of audio
+注:B batch; C channel; T length of audio
 
 ### 支持自动纠正输入信号与参考信号的计算排序，所利用的排序规则是最大化SI-SNR。有时候估计信号和参考通道间的排序是反的，本脚本可自动纠正。
 
 ## 输入格式
-single sample:
+### single sample:
 	Args:
+	
 		estimate:   numpy.ndarray, [C, T], reordered by best PIT permutation
+		
 		reference:  numpy.ndarray, [C, T]
+		
 		mixture:    numpy.ndarray, [T] or [C, T]
+		
 	Returns:
+	
 		average_SDRi 
+		
 		average_SIRi
+		
 		average_SIRi
+		
 		average_STOIi
+		
 		average_PESQi
+		
 		average_SISNRi
 
-minibatch:
+### minibatch:
 	Args:
 		estimate:   numpy.ndarray, [B, C, T], reordered by best PIT permutation
 		reference:  numpy.ndarray, [B, C, T]
