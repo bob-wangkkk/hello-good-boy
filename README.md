@@ -33,7 +33,6 @@ single sample:
 		average_STOIi
 		average_PESQi
 		average_SISNRi
-	注：i -> improvement
 
 minibatch:
 	Args:
@@ -47,7 +46,7 @@ minibatch:
 		average_STOIi
 		average_PESQi
 		average_SISNRi
-	注：i -> improvement
+
 ---
 
 
