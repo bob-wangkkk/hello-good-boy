@@ -18,6 +18,7 @@
 			T length of audio
 
 3. 支持自动纠正输入信号与参考信号的计算排序，所利用的排序规则是最大化SI-SNR。有时候估计信号和参考通道间的排序是反的，本脚本可自动纠正。
+---
 
 ## 输入格式
 ---
@@ -48,5 +49,7 @@ minibatch:
 		average_PESQi
 		average_SISNRi
 	注：i -> improvement
+---
+===
 
 
